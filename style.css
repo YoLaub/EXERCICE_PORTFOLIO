@@ -78,10 +78,13 @@ body {
     padding-bottom: 5px;
 }
 
-#bandeau #menuPrincipal ul li a:hover {
+#bandeau #menuPrincipal ul li a:hover,
+#bandeau #menuPrincipal ul li a.choix {
     color: var(--fond2);
     border-bottom: 2px solid var(--fond2);
 }
+
+
 
 #bandeau #telephone {
     width: 25%;
