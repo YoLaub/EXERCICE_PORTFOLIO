@@ -1,3 +1,117 @@
-body{
-    background-color: blue;
+/*-----------------------PRINCIPAL---------------------*/
+:root {
+    --fond1: #323861;
+    --fond2: #14B789;
+    --fond3: #E8DEDE;
+    --fontPrincipale: 'DM Sans';
+
 }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('font/dm-sans-v15-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+body {
+    background-color: var(--fond3);
+    font-family: var(--fontPrincipale);
+    font-size: 18px;
+}
+
+/*-----------------------HEADER---------------------*/
+
+#bandeau {
+    background-color: var(--fond1);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 16px 0;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+#bandeau h2 {
+    width: 25%;
+    margin-left: 10px;
+
+}
+
+#bandeau #menuPrincipal {
+    width: 50%;
+}
+
+#bandeau h2 a{
+    color: white;
+}
+#bandeau #menuPrincipal ul {
+    display: flex;
+}
+
+#bandeau #menuPrincipal ul li a {
+    color: white;
+    /*text-transform: uppercase;*/
+    margin-right: 16px;
+    padding-bottom: 5px;
+}
+
+#bandeau #menuPrincipal ul li a:hover {
+    color: var(--fond2);
+    border-bottom: 2px solid var(--fond2);
+}
+
+#bandeau #telephone {
+    width: 25%;
+    display: flex;
+}
+
+#bandeau #telephone i {
+    background-color: white;
+    color: var(--fond1);
+    padding: 8px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: 16px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bandeau #telephone .tel {
+    padding: 10px 16px;
+    border: 1px solid white;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
