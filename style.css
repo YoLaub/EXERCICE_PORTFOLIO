@@ -10,6 +10,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 ul {
@@ -54,9 +55,10 @@ body {
 
 }
 
-#bandeau h2 {
+#bandeau h1 {
     width: 25%;
-    margin-left: 10px;
+    margin-left: 15px;
+    font-size: 1.8rem;
 
 }
 
@@ -64,7 +66,7 @@ body {
     width: 50%;
 }
 
-#bandeau h2 a{
+#bandeau h1 a{
     color: white;
 }
 #bandeau #menuPrincipal ul {
@@ -84,8 +86,6 @@ body {
     border-bottom: 2px solid var(--fond2);
 }
 
-
-
 #bandeau #telephone {
     width: 25%;
     display: flex;
@@ -101,11 +101,12 @@ body {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     margin-right: 16px;
-    width: 30px;
-    height: 30px;
+    width: 45px;
+    height: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
+    line-height: 0;
 }
 
 #bandeau #telephone .tel {
@@ -118,3 +119,66 @@ body {
     -o-border-radius: 50px;
 }
 
+/*------------BLOCK BIENVENUE------------*/
+
+#bienvenu{
+    display: flex;
+    background-color: var(--fond1);
+    justify-content: space-between;
+    padding: 40px;
+}
+
+#bienvenu .bienvenuText{
+    width: 68%;
+}
+
+#bienvenu .avatar{
+    width: 28%;
+}
+
+#bienvenu .avatar img{
+    width: 100%;
+}
+
+#bienvenu .bienvenuText .hello{
+    display: flex;
+    margin-top: 20px;
+}
+
+#bienvenu .bienvenuText .hello img{
+    width: 12%;
+    margin-right: 20px;
+}
+
+#bienvenu .bienvenuText .hello h2{
+    display: flex;
+    background-color: white;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 80px;
+    margin: 16px 0px;
+    font-size: 2.2rem;
+}
+
+#bienvenu .bienvenuText h3{
+    display: flex;
+    color: var(--fond2);
+    background-color: white;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 67.5%;
+    margin-top: 50px;
+    padding: 12px 20px;
+    font-size: 1.5rem;
+
+}
