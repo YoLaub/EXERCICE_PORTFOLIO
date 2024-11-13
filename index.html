@@ -28,7 +28,7 @@
         </div>
     </header>
 
-    <main id= "contenu" class="container">
+    <main id="contenu" class="container">
         <div id="bienvenu">
             <div class="bienvenuText">
                 <div class="hello">
@@ -55,26 +55,73 @@
                     pariatur alias.</p>
             </div>
         </div>
-        <section id ='projets'>
+        <section id='projets'>
 
             <h2 class="titre">
-                Mes Projets
+                Mes&nbsp;Projets
                 <img src="images-portfolio/aerial-view.jpg" alt="projet">
 
             </h2>
-            <article class="projet">
-                <h4>Site Web</h4>
-                <h3>Zoik Agency</h3>
-                <img src="images-portfolio/nikhil.jpg" alt="nikhil">
-            </article>
-            <article class="projet">
-                <h4>Photographie</h4>
-                <h3>The Watch</h3>
-                <img src="images-portfolio/the-5th.jpg" alt="the-5th">
-            </article>
-
+            <div id="listeProjets">
+                <article class="projet">
+                    <h4>Site Web</h4>
+                    <h3>Zoik Agency</h3>
+                    <img src="images-portfolio/nikhil.jpg" alt="nikhil">
+                </article>
+                <article class="projet">
+                    <h4>Photographie</h4>
+                    <h3>The Watch</h3>
+                    <img src="images-portfolio/the-5th.jpg" alt="the-5th">
+                </article>
+            </div>
         </section>
     </main>
+    <footer id="pied" class="container">
+        <aside id="infos">
+            <div id="divers">
+                <div class="colonne">
+                    <h4>Restons connectés</h4>
+                    <ul>
+                        <li><a href="#" class="fa-brands fa-facebook"></a></li>
+                        <li><a href="#" class="fa-brands fa-instagram"></a></li>
+                        <li><a href="#" class="fa-brands fa-pinterest"></a></li>
+                    </ul>
+                    <h4>Démarrons un projet</h4>
+                    <p>Je suis disponible en Freelance</p>
+                </div>
+                <div class="colonne">
+                    <h4>À propos</h4> 
+                    <p>Je suis un futur professionnel du web.</br>
+                        Rester en contact avec moi
+                    </p>
+                    <h4>Email</h4>
+                    <p>Hello[@]moi.net</p>
+                    <h4>Téléphone</h4>
+                    <p>00-00-00-00-00</p>
+                </div>
+            </div>
+            <div id="contact">
+                <h2 class="titre">
+                    Contact
+                    <img src="images-portfolio/handshake-man.jpg" alt="contact">
+                </h2>
+                <form action="envoimail.PHP" method="post">
+                    <p><input type="text" name="nom" placeholder="nom"></p>
+                    <p><input type="email" name="email" placeholder="email"></p>
+                    <p>Vos projets</p>
+                    <p><input type="checkbox" name="nom" value="site-web"> Site web</p>
+                    <p><input type="checkbox" name="nom" value="E-commerce"> E-commerce</p>
+                    <p><input type="checkbox" name="nom" value="SEO"> SEO</p>
+                    <p><textarea id="message" name="message" rows="5" placeholder="Raconter votre projet" required=""></textarea></p>
+                    <button type="submit">Envoyer</button>
+                </form>
+
+                </div>
+            </div>
+        </aside>
+        <div id="copyright"></div>
+    </footer>
+
 
 
 </body>
