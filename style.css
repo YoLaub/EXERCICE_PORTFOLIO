@@ -36,13 +36,13 @@ a {
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
     color: white;
-    padding: 10px;
+    padding: 10px 20px;
+    font-weight: 400;
 }
 
 .bouton:hover {
     color: black;
     background-color: white;
-    font-weight: bolder;
 }
 
 
@@ -68,7 +68,7 @@ body {
 
 /*-----------------------HEADER---------------------*/
 
-#bandeau #menuPrincipal #burger i{
+#bandeau #menuPrincipal #burger i {
     font-size: 2rem;
     display: none;
 }
@@ -111,12 +111,13 @@ body {
 #bandeau #menuPrincipal ul li a:hover,
 #bandeau #menuPrincipal ul li a.choix {
     color: var(--fond2);
-    border-bottom: 2px solid var(--fond2);
+    border-bottom: 1px solid var(--fond2);
 }
 
 #bandeau #telephone {
     width: 25%;
     display: flex;
+    justify-content: center;
 }
 
 #bandeau #telephone i {
@@ -134,7 +135,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    line-height: 0;
 }
 
 #bandeau #telephone .tel {
@@ -158,11 +158,10 @@ body {
 
 #bienvenu .bienvenuText {
     width: 68%;
-
 }
 
 #bienvenu .avatar {
-    width: 28%;
+    width: 30%;
 }
 
 #bienvenu .avatar img {
@@ -176,7 +175,7 @@ body {
 
 #bienvenu .bienvenuText .hello img {
     width: 12%;
-    margin-right: 20px;
+    margin-right: 16px;
 }
 
 #bienvenu .bienvenuText .hello h2 {
@@ -190,7 +189,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0 80px;
-    margin: 16px 0px;
+    margin: 10px 0px;
     font-size: 2.2rem;
 }
 
@@ -236,8 +235,9 @@ body {
     -o-border-radius: 25px;
 }
 
+#histoire .imgHistoire,
 #histoire #histoirContenu {
-    width: 48%;
+    width: 46%;
 }
 
 .titre {
@@ -255,8 +255,8 @@ body {
 }
 
 #histoire #histoirContenu h2 img {
-    width: 24%;
-    /* margin-left: 3%;*/
+    width: 28%;
+    margin-left: 20px;
 }
 
 #histoire #histoirContenu h3 {
@@ -273,14 +273,10 @@ body {
 }
 
 #projets .titre {
-    flex-direction: row-reverse;
     width: 48%;
-    margin-bottom: 40px;
+
 }
 
-#projets .titre p {
-    margin-left: 34px;
-}
 
 #projets h2 img {
     width: 120px;
@@ -291,10 +287,20 @@ body {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    margin-right: 20px;
 }
 
+#projets #listeProjets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 40px;
+}
+
+
 #projets #listeProjets .projet {
-    width: 538px;
+    width: 48%;
     height: 490px;
     background-color: white;
     border-radius: 25px;
@@ -308,9 +314,8 @@ body {
 
 }
 
-#projets #listeProjets .projet {
-    border: 1px solid #14B789;
-
+#projets #listeProjets .projet:hover {
+    border: 1px solid var(--fond2);
 }
 
 #projets #listeProjets .projet img {
@@ -333,12 +338,6 @@ body {
 }
 
 #projets #listeProjets .projet img:hover {
-    width: 90%;
-    border-radius: 25px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
     transform: rotate(15deg);
     -webkit-transform: rotate(15deg);
     -moz-transform: rotate(15deg);
@@ -354,12 +353,6 @@ body {
     margin-bottom: 32px;
 }
 
-#projets #listeProjets {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-}
 
 /*-----------------FOOTER------------*/
 
@@ -369,15 +362,17 @@ body {
 
 #pied #infos {
     display: flex;
+    flex-wrap: wrap;
     padding: 40px 24px;
     justify-content: space-around;
 
 }
 
 #pied #infos #divers {
+    margin-top: 160px;
     display: flex;
+    background-color: white;
     padding: 40px;
-    justify-content: space-around;
 }
 
 #pied #infos #divers .colonne ul {
@@ -389,9 +384,6 @@ body {
     color: var(--fond1);
 }
 
-.fa-instagram {
-    margin: 0px 20px;
-}
 
 
 #pied #infos #divers,
@@ -414,11 +406,6 @@ body {
     margin-top: 16px;
 }
 
-
-#pied #infos #contact .titre {
-    flex-direction: row-reverse;
-}
-
 #pied #infos #contact h2 img {
     width: 120px;
     height: 120px;
@@ -428,18 +415,19 @@ body {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    margin-right: 20px;
 }
 
 #pied #infos #contact p {
-    margin: 8px;
+    margin: 8px 0;
 }
 
 #pied #infos #contact p label {
-    margin-left: 15px;
+    margin-left: 16px;
 }
 
 #pied #infos #contact .titre {
-    margin-bottom: 42px;
+    margin-bottom: 60px;
 }
 
 #pied #infos #contact p input[type=text],
@@ -447,7 +435,7 @@ body {
 #pied #infos #contact p textarea {
     width: 100%;
     border: none;
-    padding: 8px 16px;
+    padding: 8px;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -459,30 +447,22 @@ body {
     margin-top: 16px;
 }
 
-#pied #infos #contact p input[type=text] {
-    margin-top: 16px;
-}
-
 #pied #infos #contact p input[type=email] {
     margin-bottom: 16px;
 }
 
-#pied #infos #contact p button {
-    background-color: #14B789;
+#pied #infos #contact p input[type=submit] {
+    background-color: var(--fond2);
     color: white;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-    padding: 5px;
     border: none;
+    padding: 8px 16px;
+    border-radius: 15px;
 }
 
 #pied #copyright p {
     padding: 10px 0;
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 @media screen and (max-width:992px) {
@@ -495,9 +475,38 @@ body {
 
 @media screen and (max-width:576px) {
 
-    body {
-        background-color: pink;
+    #bandeau #menuPrincipal #burger i {
+        display: block;
+        /*margin-left: 48px;*/
+        text-align: right;
     }
+
+    #bandeau #telephone p {
+        display: none;
+    }
+
+    #bandeau #menuPrincipal ul {
+        display: none;
+    }
+
+    #bienvenu .avatar {
+        display: none;
+    }
+
+    #bienvenu .bienvenuText {
+        width: 98%;
+    }
+    
+
+    #bienvenu .bienvenuText h3 {
+        width: 98%;
+        font-size: 1.4rem;
+    }
+
+    #bienvenu .bienvenuText .hello h3 {
+        font-size: 2rem;
+    }
+
 
     #histoire .imgHistoire,
     #histoire #histoirContenu {
@@ -509,7 +518,7 @@ body {
     }
 
     #projets .titre {
-        width: 100%;
+        width: 98%;
     }
 
     #projets #listeProjets .projet {
@@ -523,57 +532,14 @@ body {
         width: 98%;
     }
 
-    #pied #infos #divers{
-        margin-top: 20px;
+    #pied #infos #divers {
+        margin-top: 24px;
     }
 
 
-    #pied #infos{
+    #pied #infos {
         flex-direction: column-reverse;
     }
-
-    #bandeau #menuPrincipal #burger i{
-        display: block;
-        margin-left: 48px;
-        text-align: right;
-    }
-
-    #bandeau #telephone p{
-        display: none;
-    }
-
-    #bandeau #menuPrincipal ul{
-        display: none;
-    }
-
-    #bienvenu .avatar {
-        display: none;
-    }
-
-    #bienvenue .bienvenuText{
-        width: 98%;
-    }
-
-    #bienvenue .bienvenuText h3{
-        width: 98%;
-    }
-
-    #bienvenu .bienvenuText .hello h2{
-    font-size: 1.6rem;
-    width: 98%;
-    }
-    
-    #bienvenu .bienvenuText .hello img{
-        width: 20%;
-        height: 20%;
-    }
-    
-    
-
-
-
-
-
 
 
 }
