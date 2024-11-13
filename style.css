@@ -68,6 +68,11 @@ body {
 
 /*-----------------------HEADER---------------------*/
 
+#bandeau #menuPrincipal #burger i{
+    font-size: 2rem;
+    display: none;
+}
+
 #bandeau {
     background-color: var(--fond1);
     color: white;
@@ -201,7 +206,6 @@ body {
     justify-content: center;
     align-items: center;
     width: 67.5%;
-    margin-top: 50px;
     padding: 12px 20px;
     font-size: 1.5rem;
     margin: 50px 0px;
@@ -212,6 +216,7 @@ body {
 #histoire {
     background-color: var(--fond3);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 40px 24px;
 }
@@ -244,9 +249,8 @@ body {
     -o-border-radius: 25px;
     -webkit-border-radius: 25px;
     align-items: center;
+    justify-content: space-evenly;
     color: white;
-    justify-content: space-between;
-    padding: 0 10%;
     font-size: 2.8rem;
 }
 
@@ -274,6 +278,10 @@ body {
     margin-bottom: 40px;
 }
 
+#projets .titre p {
+    margin-left: 34px;
+}
+
 #projets h2 img {
     width: 120px;
     height: 120px;
@@ -297,10 +305,10 @@ body {
     padding: 40px;
     overflow: hidden;
     border: 1px solid white;
-    
+
 }
 
-#projets #listeProjets .projet{
+#projets #listeProjets .projet {
     border: 1px solid #14B789;
 
 }
@@ -338,11 +346,11 @@ body {
     -o-transform: rotate(15deg);
 }
 
-#projets #listeProjets .projet h4{
+#projets #listeProjets .projet h4 {
     font-size: 0.8rem;
 }
 
-#projets #listeProjets .projet h3{
+#projets #listeProjets .projet h3 {
     margin-bottom: 32px;
 }
 
@@ -355,58 +363,63 @@ body {
 
 /*-----------------FOOTER------------*/
 
-#pied{
+#pied {
     background-color: var(--fond3);
 }
 
 #pied #infos {
     display: flex;
     padding: 40px 24px;
+    justify-content: space-around;
 
 }
 
-#pied #infos #divers{
+#pied #infos #divers {
     display: flex;
     padding: 40px;
     justify-content: space-around;
 }
 
-#pied #infos #divers .colonne ul{
+#pied #infos #divers .colonne ul {
     display: flex;
 }
 
-#pied #infos #divers ul li a{
+#pied #infos #divers ul li a {
     margin: 0 10px;
     color: var(--fond1);
 }
 
-.fa-instagram{
+.fa-instagram {
     margin: 0px 20px;
 }
 
 
 #pied #infos #divers,
-#pied #infos #contact{
-    width: 46% ;
+#pied #infos #contact {
+    width: 46%;
 }
 
-#pied #infos #divers{
+#pied #infos #divers {
     display: flex;
     background-color: white;
+    padding: 40px;
+    margin-top: 160px;
 }
 
- #pied #infos #divers .colonne{
-    width: 48%; }
+#pied #infos #divers .colonne {
+    width: 48%;
+}
 
- #pied #infos #divers .colonne h4{
+#pied #infos #divers .colonne h4 {
     margin-top: 16px;
- }
+}
 
 
- #pied #infos #contact .titre{
+#pied #infos #contact .titre {
     flex-direction: row-reverse;
- }
- #pied #infos #contact h2 img {
+}
+
+#pied #infos #contact h2 img {
     width: 120px;
     height: 120px;
     object-fit: cover;
@@ -415,4 +428,152 @@ body {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
- }
+}
+
+#pied #infos #contact p {
+    margin: 8px;
+}
+
+#pied #infos #contact p label {
+    margin-left: 15px;
+}
+
+#pied #infos #contact .titre {
+    margin-bottom: 42px;
+}
+
+#pied #infos #contact p input[type=text],
+#pied #infos #contact p input[type=email],
+#pied #infos #contact p textarea {
+    width: 100%;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#pied #infos #contact p textarea {
+    margin-top: 16px;
+}
+
+#pied #infos #contact p input[type=text] {
+    margin-top: 16px;
+}
+
+#pied #infos #contact p input[type=email] {
+    margin-bottom: 16px;
+}
+
+#pied #infos #contact p button {
+    background-color: #14B789;
+    color: white;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    padding: 5px;
+    border: none;
+}
+
+#pied #copyright p {
+    padding: 10px 0;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width:992px) {
+
+    body {
+        background-color: blue;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+
+    body {
+        background-color: pink;
+    }
+
+    #histoire .imgHistoire,
+    #histoire #histoirContenu {
+        width: 98%;
+    }
+
+    #histoire .imgHistoire {
+        margin-bottom: 16px;
+    }
+
+    #projets .titre {
+        width: 100%;
+    }
+
+    #projets #listeProjets .projet {
+        width: 98%;
+        height: 260px;
+        margin-bottom: 16px;
+    }
+
+    #pied #infos #divers,
+    #pied #infos #contact {
+        width: 98%;
+    }
+
+    #pied #infos #divers{
+        margin-top: 20px;
+    }
+
+
+    #pied #infos{
+        flex-direction: column-reverse;
+    }
+
+    #bandeau #menuPrincipal #burger i{
+        display: block;
+        margin-left: 48px;
+        text-align: right;
+    }
+
+    #bandeau #telephone p{
+        display: none;
+    }
+
+    #bandeau #menuPrincipal ul{
+        display: none;
+    }
+
+    #bienvenu .avatar {
+        display: none;
+    }
+
+    #bienvenue .bienvenuText{
+        width: 98%;
+    }
+
+    #bienvenue .bienvenuText h3{
+        width: 98%;
+    }
+
+    #bienvenu .bienvenuText .hello h2{
+    font-size: 1.6rem;
+    width: 98%;
+    }
+    
+    #bienvenu .bienvenuText .hello img{
+        width: 20%;
+        height: 20%;
+    }
+    
+    
+
+
+
+
+
+
+
+}

@@ -15,6 +15,9 @@
     <header id="bandeau" class="container">
         <h1><a href="index.html">Mon Portfolio</a></h1>
         <nav id="menuPrincipal">
+            <div id="burger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
             <ul>
                 <li><a class="choix" href="index.html">Accueil</a></li>
                 <li><a href="#">À Propos</a></li>
@@ -58,7 +61,7 @@
         <section id='projets'>
 
             <h2 class="titre">
-                Mes&nbsp;Projets
+               Mes&nbsp;Projets
                 <img src="images-portfolio/aerial-view.jpg" alt="projet">
 
             </h2>
@@ -108,18 +111,21 @@
                 <form action="envoimail.PHP" method="post">
                     <p><input type="text" name="nom" placeholder="nom"></p>
                     <p><input type="email" name="email" placeholder="email"></p>
-                    <p>Vos projets</p>
-                    <p><input type="checkbox" name="nom" value="site-web"> Site web</p>
-                    <p><input type="checkbox" name="nom" value="E-commerce"> E-commerce</p>
-                    <p><input type="checkbox" name="nom" value="SEO"> SEO</p>
-                    <p><textarea id="message" name="message" rows="5" placeholder="Raconter votre projet" required=""></textarea></p>
-                    <button type="submit">Envoyer</button>
-                </form>
 
-                </div>
+                    <p>Vos projets</p>
+                    <p><input type="checkbox" id="site" name="projet" value="site"><label for="sites">Site Web</label></p>
+
+                    <p><input type="checkbox" id="ecommerce" name="projet" value="ecommerce"><label for="ecommerce">E-commerce</label></p>
+
+                    <p><input type="checkbox" id=SEO name="projet" value="SEO"><label for="SEO">SEO</label></p>
+
+                    <p><textarea id="message" name="message" rows="5" placeholder="Raconter votre projet" required=""></textarea></p>
+
+                    <p><button type="submit">Envoyer</button></p>
+                </form>
             </div>
         </aside>
-        <div id="copyright"></div>
+        <div id="copyright"> <p>Copyright &copy; 2024 - Mon Portfolio. Tout droit réservé - Design: Greta Bretagne Sud</p></div>
     </footer>
 
 
